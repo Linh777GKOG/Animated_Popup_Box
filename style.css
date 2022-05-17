@@ -28,9 +28,28 @@ body {
 .container::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -15px;
   width: 40px;
   height: 40px;
-  background: #f00;
+  background: #37444b;
+  border-radius: 5px;
   transform: rotate(45deg);
+}
+
+.toggleBtn {
+  position: absolute;
+  min-width: 60px;
+  height: 60px;
+  background: #0bcf9c;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggleBtn::before {
+  content: "+";
+  font-size: 2.5em;
+  color: #fff;
 }
