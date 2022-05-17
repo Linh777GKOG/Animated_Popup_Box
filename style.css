@@ -42,6 +42,7 @@ body {
 
 .toggleBtn {
   position: absolute;
+  bottom: -20px;
   min-width: 60px;
   height: 60px;
   background: #0bcf9c;
@@ -50,10 +51,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
 }
 
 .toggleBtn::before {
   content: "+";
   font-size: 2.5em;
   color: #fff;
+}
+
+.container.active .toggleBtn {
+  bottom: -90px;
+  transition: rotate(135deg);
+  background: #ff5a57;
 }
