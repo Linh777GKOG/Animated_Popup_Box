@@ -13,3 +13,24 @@ body {
   min-height: 100vh;
   background: #1a242a;
 }
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #37444b;
+  border-radius: 25px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background: #f00;
+  transform: rotate(45deg);
+}
